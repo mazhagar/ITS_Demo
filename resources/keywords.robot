@@ -29,3 +29,4 @@ FrontPage
 	GoTo    https://its-stg-itsstore.sparkred.com/
   	TypeSecret      email           ${USER_ITS}
 	TypeSecret      Password        ${PASS_ITS}
+	ClickText	Sign in
