@@ -6,8 +6,8 @@ Library             String
 
 *** Variables ***
 ${BROWSER}                  chrome
-${USER_ITS}                     cortzuser
-${PASS_ITS}                     p0o!0pen
+${USER_ITS}                 cortzuser
+${PASS_ITS}                 p0o!0pen
 
 *** Keywords ***
 Setup Browser
@@ -27,5 +27,5 @@ Appstate
 
 FrontPage
 	GoTo    https://its-stg-itsstore.sparkred.com/
-  TypeSecret      email           ${USER_ITS}
+  	TypeSecret      email           ${USER_ITS}
 	TypeSecret      Password        ${PASS_ITS}
