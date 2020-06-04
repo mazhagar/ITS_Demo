@@ -8,8 +8,8 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_HomePage
-    [tags]            testgen
-	Appstate       	    Frontpage
+   	 [tags]            testgen
+	Appstate       	    FrontPage
 	HoverText      	    Chemicals
 	ClickText      	    Pool Algaecides
 ITS_PLPPage
