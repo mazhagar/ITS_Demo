@@ -46,7 +46,7 @@ ITS_PaymentDetailsSection
 	VerifyText	Payment Details
 	DROPDOWN        billing_creditCartType		visa
 	#VerifySelectedOption	billing_creditCartType		visa
-	TypeText	Card Number	4263982640269299
+	TypeText	Card Number	4111111111111111
 	TypeText	Name On Card	TestCard
 	TypeText	CVV/Security Code	123
 	DROPDOWN	billing_expirationDate		06-Jun
