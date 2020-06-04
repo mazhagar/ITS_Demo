@@ -12,19 +12,19 @@ ITS_HomePage
 	Appstate       	    FrontPage
 	HoverText      	    Chemicals
 	ClickText      	    Pool Algaecides
-ITS_PLPPage
+#ITS_PLPPage
 	ClickText           In The Swim Pool Algaecide
-ITS_PDPPage	
+#ITS_PDPPage	
 	TypeText            QTY:            10      anchor=Y1004
 	LogScreenshot
 	ClickText           ADD TO CART             anchor=Y1004
-ITS_YourShoppingCartPopub	
+#ITS_YourShoppingCartPopub	
 	ClickText           View Cart
-ITS_ShoppingCartPage	
+#ITS_ShoppingCartPage	
 	ClickText           CHECK OUT
-ITS_SecureCheckoutPage
+#ITS_SecureCheckoutPage
 	ClickText           GUEST CHECKOUT
-ITS_ShippingAddressPage	
+#ITS_ShippingAddressPage	
 	TypeText	First Name	[ITS, TestITS, ITStest]
 	TypeText	Last Name	[TEST, Name, test]
 	TypeText	Email	qentineltest01@mail.com
@@ -42,7 +42,7 @@ ITS_ShippingAddressPage
 	TypeText         Telephone        1234567890
 	LogScreenshot
 	ClickText           CONTINUE
-ITS_PaymentDetailsSection
+#ITS_PaymentDetailsSection
 	VerifyText	Payment Details
 	DROPDOWN        billing_creditCartType		visa
 	#VerifySelectedOption	billing_creditCartType		visa
@@ -53,9 +53,9 @@ ITS_PaymentDetailsSection
 	DROPDOWN	billing_expirationYear		2021
 	LogScreenshot
 	ClickText	REVIEW ORDER
-ITS_ReviewOrderPage
+#ITS_ReviewOrderPage
 	ClickText	PLACE ORDER
-ITS_ThankyouPage
+#ITS_ThankyouPage
 	VerifyTexts	Thank you for your order!
 	${ORDERID}	GetText		Your Order ID is	between=???
 	LogScreenshot
