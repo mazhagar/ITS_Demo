@@ -26,7 +26,7 @@ Appstate
 	...               FrontPage
 
 FrontPage
-	GoTo    https://its-stg-itsstore.sparkred.com/
-  	TypeAlert      Username           ${USER_ITS}
-	TypeAlert      Password        ${PASS_ITS}
-	ClickText	Sign in
+	GoTo    https://cortzuser:p0o!0pen@its-stg-itsstore.sparkred.com/
+  	#TypeAlert      Username           ${USER_ITS}
+	#TypeAlert      Password        ${PASS_ITS}
+	#ClickText	Sign in
