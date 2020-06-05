@@ -10,16 +10,9 @@ Suite Teardown       End suite
 ITS_HomePage
    	 [tags]            testgen
 	Appstate       	    FrontPage
-	HoverText      	    Chemicals
-	ClickText      	    Pool Algaecides
-ITS_PLPPage
-	ClickText           In The Swim Pool Algaecide
-ITS_PDPPage	
-	TypeText            QTY:            1      anchor=Y1004
-	LogScreenshot
-	ClickText           ADD TO CART             anchor=Y1004
-ITS_YourShoppingCartPopub	
-	ClickText           View Cart
+	ClickText      	    Quick Order
+	TypeText	Y1004
+	ClickText	Add to cart
 ITS_ShoppingCartPage	
 	ClickText           CHECK OUT
 ITS_SecureCheckoutPage
@@ -48,9 +41,9 @@ ITS_PaymentDetailsSection
 	#VerifySelectedOption	billing_creditCartType		visa
 	TypeText	Card Number	4917484589897107
 	TypeText	Name On Card	TestCard
-	TypeText	CVV/Security Code	323
+	TypeText	CVV/Security Code	324
 	DROPDOWN	billing_expirationDate		06-Jun
-	DROPDOWN	billing_expirationYear		2026
+	DROPDOWN	billing_expirationYear		2023
 	LogScreenshot
 	ClickText	REVIEW ORDER
 ITS_ReviewOrderPage
