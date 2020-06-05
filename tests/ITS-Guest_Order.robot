@@ -8,7 +8,7 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_HomePage
-   	 [tags]            testgen
+   	 [tags]            testgen	nwise=9
 	Appstate       	    FrontPage
 	ClickText      	    Quick Order
 	TypeText	quantity	1
