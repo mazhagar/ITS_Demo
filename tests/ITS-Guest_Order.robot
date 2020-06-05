@@ -8,10 +8,11 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_HomePage
+   	[tags]            testgen	nwise=3
 	Appstate       	    FrontPage
 	ClickText      	    Quick Order
 	TypeText	quantity	1
-	TypeText	skuId	Y1004
+	TypeText	skuId	[Y1004, Y1006, Y1012]
 	ClickText	Add to cart
 ITS_ShoppingCartPage	
 	#Paypal Checkout
@@ -28,7 +29,6 @@ ITS_SecureCheckoutPage
 	#ClickText	SHIP TO THIS ADDRESS
 	#ClickText	REVIEW ORDER
 ITS_ShippingAddressPage	
-   	 [tags]            testgen	nwise=9
 	TypeText	First Name	[ITS, TestITS, ITStest]
 	TypeText	Last Name	[TEST, Name, test]
 	TypeText	Email	qentineltest01@mail.com
