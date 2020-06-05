@@ -29,8 +29,8 @@ ITS_HomePage
 	#ClickText	SHIP TO THIS ADDRESS
 	#ClickText	REVIEW ORDER
 #ITS_ShippingAddressPage	
-	TypeText	First Name	[ITS, TestITS, ITStest]
-	TypeText	Last Name	[TEST, Name, test]
+	TypeText	First Name	ITS
+	TypeText	Last Name	Name
 	TypeText	Email	qentineltest01@mail.com
 	# Switch checkbox to off
 	ClickCheckbox       I agree         off
