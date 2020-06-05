@@ -8,13 +8,13 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_HomePage
-   	[tags]            testgen	nwise=3
+   	[tags]            testgen	nwise=9
 	Appstate       	    FrontPage
 	ClickText      	    Quick Order
-	TypeText	quantity	1
-	TypeText	skuId	[Y1004, Y1006, Y1012]
+	TypeText	quantity	10
+	TypeText	skuId	Y1004
 	ClickText	Add to cart
-ITS_ShoppingCartPage	
+#ITS_ShoppingCartPage	
 	#Paypal Checkout
 	#ClickElement           //*[@id\="replaced_with_paypal_check_button"]/input[5]
 	#TypeText	email	rsivakumar@dss-partners.com
@@ -24,11 +24,11 @@ ITS_ShoppingCartPage
 	#ClickText	Continue
 	ClickText	CHECK OUT
 	
-ITS_SecureCheckoutPage
+#ITS_SecureCheckoutPage
 	ClickText           GUEST CHECKOUT
 	#ClickText	SHIP TO THIS ADDRESS
 	#ClickText	REVIEW ORDER
-ITS_ShippingAddressPage	
+#ITS_ShippingAddressPage	
 	TypeText	First Name	[ITS, TestITS, ITStest]
 	TypeText	Last Name	[TEST, Name, test]
 	TypeText	Email	qentineltest01@mail.com
@@ -46,7 +46,7 @@ ITS_ShippingAddressPage
 	TypeText         Telephone        1234567890
 	LogScreenshot
 	ClickText           CONTINUE
-ITS_PaymentDetailsSection
+#ITS_PaymentDetailsSection
 	VerifyText	Payment Details
 	DROPDOWN        billing_creditCartType		masterCard
 	#VerifySelectedOption	billing_creditCartType		visa
@@ -57,9 +57,9 @@ ITS_PaymentDetailsSection
 	DROPDOWN	billing_expirationYear		2023
 	LogScreenshot
 	ClickText	REVIEW ORDER
-ITS_ReviewOrderPage
+#ITS_ReviewOrderPage
 	ClickText	PLACE ORDER
-ITS_ThankyouPage
+#ITS_ThankyouPage
 	VerifyTexts	Thank you for your order!
 	${ORDERID}	GetText		Your Order ID is	between=???
 	LogScreenshot
