@@ -15,10 +15,19 @@ ITS_HomePage
 	TypeText	skuId	Y1004
 	ClickText	Add to cart
 ITS_ShoppingCartPage	
-	ClickText           CHECK OUT
+	#Paypal Checkout
+	ClickElement           //*[@id\="replaced_with_paypal_check_button"]/input[5]
+	TypeText	email	rsivakumar@dss-partners.com
+	ClickText	Next
+	TypeText	password	raviS9840@
+	ClickText	btnLogin
+	ClickText	payment-submit-btn
+	
 ITS_SecureCheckoutPage
 	ClickText           GUEST CHECKOUT
-ITS_ShippingAddressPage	
+	ClickText	SHIP TO THIS ADDRESS
+	ClickText	REVIEW ORDER
+#ITS_ShippingAddressPage	
 	TypeText	First Name	[ITS, TestITS, ITStest]
 	TypeText	Last Name	[TEST, Name, test]
 	TypeText	Email	qentineltest01@mail.com
@@ -36,7 +45,7 @@ ITS_ShippingAddressPage
 	TypeText         Telephone        1234567890
 	LogScreenshot
 	ClickText           CONTINUE
-ITS_PaymentDetailsSection
+#ITS_PaymentDetailsSection
 	VerifyText	Payment Details
 	DROPDOWN        billing_creditCartType		masterCard
 	#VerifySelectedOption	billing_creditCartType		visa
