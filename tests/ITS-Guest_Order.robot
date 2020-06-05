@@ -15,7 +15,7 @@ ITS_HomePage
 ITS_PLPPage
 	ClickText           In The Swim Pool Algaecide
 ITS_PDPPage	
-	TypeText            QTY:            10      anchor=Y1004
+	TypeText            QTY:            1      anchor=Y1004
 	LogScreenshot
 	ClickText           ADD TO CART             anchor=Y1004
 ITS_YourShoppingCartPopub	
@@ -50,7 +50,7 @@ ITS_PaymentDetailsSection
 	TypeText	Name On Card	TestCard
 	TypeText	CVV/Security Code	123
 	DROPDOWN	billing_expirationDate		06-Jun
-	DROPDOWN	billing_expirationYear		2021
+	DROPDOWN	billing_expirationYear		2022
 	LogScreenshot
 	ClickText	REVIEW ORDER
 ITS_ReviewOrderPage
