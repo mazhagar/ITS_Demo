@@ -37,9 +37,9 @@ ITS_ShippingAddressPage
 	ClickText           CONTINUE
 ITS_PaymentDetailsSection
 	VerifyText	Payment Details
-	DROPDOWN        billing_creditCartType		visa
+	DROPDOWN        billing_creditCartType		masterCard
 	#VerifySelectedOption	billing_creditCartType		visa
-	TypeText	Card Number	4917484589897107
+	TypeText	Card Number	5425233430109903
 	TypeText	Name On Card	TestCard
 	TypeText	CVV/Security Code	324
 	DROPDOWN	billing_expirationDate		06-Jun
