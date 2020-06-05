@@ -11,7 +11,7 @@ ITS_HomePage
    	 [tags]            testgen
 	Appstate       	    FrontPage
 	ClickText      	    Quick Order
-	TypeText	Y1004
+	TypeText	skuId	Y1004
 	ClickText	Add to cart
 ITS_ShoppingCartPage	
 	ClickText           CHECK OUT
