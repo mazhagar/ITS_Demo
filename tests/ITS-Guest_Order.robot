@@ -8,9 +8,7 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_HomePage
-   	 [tags]            testgen	nwise=9
-	TypeText	First Name	[ITS, TestITS, ITStest]
-	TypeText	Last Name	[TEST, Name, test]
+   	 [tags]            testgen	nwise=2
 	Appstate       	    FrontPage
 	ClickText      	    Quick Order
 	TypeText	quantity	1
