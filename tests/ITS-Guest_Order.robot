@@ -11,7 +11,7 @@ ITS_HomePage
    	 [tags]            testgen
 	Appstate       	    FrontPage
 	ClickText      	    Quick Order
-	TypeText	quantity	80
+	TypeText	quantity	1
 	TypeText	skuId	Y1004
 	ClickText	Add to cart
 ITS_ShoppingCartPage	
@@ -20,8 +20,8 @@ ITS_ShoppingCartPage
 	TypeText	email	rsivakumar@dss-partners.com
 	ClickText	Next
 	TypeText	password	raviS9840@
-	ClickText	btnLogin
-	ClickText	payment-submit-btn
+	ClickText	Log in
+	ClickText	Continue
 	
 ITS_SecureCheckoutPage
 	ClickText           GUEST CHECKOUT
