@@ -22,7 +22,7 @@ ITS_HomePage
 	#TypeText	password	raviS9840@
 	#ClickText	Log in
 	#ClickText	Continue
-	ClickItem	Check Out
+	ClickElement	//*[@id\="cartform"]/div[3]/div[3]/div[3]/div[2]/input[3]
 	
 #ITS_SecureCheckoutPage
 	ClickText           GUEST CHECKOUT
