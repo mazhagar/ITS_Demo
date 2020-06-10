@@ -12,7 +12,7 @@ ITS_HomePage
 	Appstate       	    FrontPage
 	ClickText      	    Quick Order
 	TypeText	quantity	[10, 20, 30]
-	TypeText	skuId		[Y1004, Y1006, Y1012]
+	TypeText	skuId		Y1004
 	ClickText	Add to cart
 #ITS_ShoppingCartPage	
 	#Paypal Checkout
@@ -31,7 +31,7 @@ ITS_HomePage
 #ITS_ShippingAddressPage	
 	TypeText	First Name	ITS
 	TypeText	Last Name	Name
-	TypeText	Email	qentineltest01@mail.com
+	TypeText	Email	maaritest1@gmail.com
 	# Switch checkbox to off
 	ClickCheckbox       I agree         off
 	TypeText	shippingAddress_address1		2352 Test Street
