@@ -11,7 +11,7 @@ ITS_HomePage
    	[tags]            testgen	nwise=3
 	Appstate       	    FrontPage
 	ClickText      	    Quick Order
-	TypeText	quantity	[10, 20, 30]
+	TypeText	quantity	[10, 20, 50, 100]
 	TypeText	skuId		Y1004
 	ClickText	Add to cart
 #ITS_ShoppingCartPage	
