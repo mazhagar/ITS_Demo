@@ -22,7 +22,7 @@ ITS_HomePage
 	#TypeText	password	raviS9840@
 	#ClickText	Log in
 	#ClickText	Continue
-	ClickItem	CHECK OUT
+	ClickItem	Check Out
 	
 #ITS_SecureCheckoutPage
 	ClickText           GUEST CHECKOUT
