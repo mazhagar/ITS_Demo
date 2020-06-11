@@ -8,10 +8,10 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_HomePage
-   	[tags]            testgen	nwise=3
+   	[tags]            testgen	nwise=8
 	Appstate       	    FrontPage
 	ClickText      	    ${Mini_Quick}
-	TypeText	quantity	[${QTY_Quick}]
+	TypeText	quantity	[10, 20, 50, 100]
 	TypeText	skuId		${ItemNumber_Quick}
 	ClickText	${AddToCartButton_Quick}
 #ITS_ShoppingCartPage	
