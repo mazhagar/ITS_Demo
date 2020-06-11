@@ -11,8 +11,8 @@ ITS_HomePage
    	[tags]            testgen	nwise=3
 	Appstate       	    FrontPage
 	ClickText      	    ${Mini_Quick}
-	#TypeText	${QTY_Quick}
-	TypeText	${ItemNumber_Quick}
+	TypeText	quantity	${QTY_Quick}
+	TypeText	skuId		${ItemNumber_Quick}
 	ClickText	${AddToCartButton_Quick}
 #ITS_ShoppingCartPage	
 	#Paypal Checkout
