@@ -11,9 +11,9 @@ ITS_HomePage
    	[tags]            testgen	nwise=3
 	Appstate       	    FrontPage
 	ClickText      	    ${Mini_Quick}
-	TypeText	quantity	[10, 20, 50, 100]
-	TypeText	skuId		Y1004
-	ClickText	Add to cart
+	TypeText	${QTY_Quick}
+	TypeText	${ItemNumber_Quick}
+	ClickText	${AddToCartButton_Quick}
 #ITS_ShoppingCartPage	
 	#Paypal Checkout
 	#ClickElement           //*[@id\="replaced_with_paypal_check_button"]/input[5]
