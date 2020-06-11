@@ -29,8 +29,8 @@ ITS_HomePage
 	#ClickText	SHIP TO THIS ADDRESS
 	#ClickText	REVIEW ORDER
 #ITS_ShippingAddressPage	
-	TypeText	First Name	[Test, ITS, Maari]
-	TypeText	Last Name	[Name, Test, Maari]
+	TypeText	First Name	[Test, ITS, Maari, Muthu]
+	TypeText	Last Name	[Name, Test, Ravi, Arun]
 	TypeText	Email	maaritest1@gmail.com
 	# Switch checkbox to off
 	ClickCheckbox       I agree         off
