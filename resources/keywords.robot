@@ -9,6 +9,9 @@ ${BROWSER}                  chrome
 ${USER_ITS}                 cortzuser
 ${PASS_ITS}                 p0o!0pen
 ${Mini_Quick}		Quick Order
+${QTY_Quick}		quantity	[10, 20, 50, 100, 150, 200]
+${ItemNumber_Quick}	skuId		Y1004
+${AddToCartButton_Quick}	Add to cart
 
 *** Keywords ***
 Setup Browser
