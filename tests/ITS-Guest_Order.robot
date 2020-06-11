@@ -8,7 +8,7 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_HomePage
-   	[tags]            testgen	nwise=8
+   	[tags]            testgen	nwise=13
 	Appstate       	    FrontPage
 	ClickText      	    ${Mini_Quick}
 	TypeText	quantity	[10, 20, 50, 100]
@@ -29,8 +29,8 @@ ITS_HomePage
 	#ClickText	SHIP TO THIS ADDRESS
 	#ClickText	REVIEW ORDER
 #ITS_ShippingAddressPage	
-	TypeText	First Name	ITS
-	TypeText	Last Name	Name
+	TypeText	First Name	[Test, ITS, Maari]
+	TypeText	Last Name	[Name, Test, Maari]
 	TypeText	Email	maaritest1@gmail.com
 	# Switch checkbox to off
 	ClickCheckbox       I agree         off
