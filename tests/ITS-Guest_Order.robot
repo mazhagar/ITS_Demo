@@ -10,7 +10,7 @@ Suite Teardown       End suite
 ITS_HomePage
    	[tags]            testgen	nwise=3
 	Appstate       	    FrontPage
-	ClickText      	    Quick Order
+	ClickText      	    ${Mini_Quick}
 	TypeText	quantity	[10, 20, 50, 100]
 	TypeText	skuId		Y1004
 	ClickText	Add to cart
