@@ -8,6 +8,7 @@ Library             String
 ${BROWSER}                  chrome
 ${USER_ITS}                 cortzuser
 ${PASS_ITS}                 p0o!0pen
+${Mini_Quick}		Quick Order
 
 *** Keywords ***
 Setup Browser
