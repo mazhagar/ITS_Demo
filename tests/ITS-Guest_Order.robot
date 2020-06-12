@@ -59,7 +59,7 @@ ITS_HomePage
 	ClickText	REVIEW ORDER
 #ITS_ReviewOrderPage
 	UseTable	Merchandise Subtotal
-	VerifyTable         r6c2	$138.82
+	VerifyTable         r7c2	$138.82
 	${Order_TOTAL}            GetCellText     r6c2
 	ClickText	PLACE ORDER
 #ITS_ThankyouPage
