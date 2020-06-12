@@ -59,8 +59,8 @@ ITS_HomePage
 	ClickText	REVIEW ORDER
 #ITS_ReviewOrderPage
 	UseTable	Merchandise Subtotal
-	VerifyTable         r7c2	$138.82
-	${Order_TOTAL}            GetCellText     r6c2
+	#VerifyText	$138.82
+	${Order_TOTAL}	GetText		//*[@id\="confirmationform"]/div[3]/div[1]/div[3]/div[4]/div[2]/strong
 	ClickText	PLACE ORDER
 #ITS_ThankyouPage
 	VerifyTexts	Thank you for your order!
