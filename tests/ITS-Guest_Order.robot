@@ -60,7 +60,12 @@ ITS_HomePage
 #ITS_ReviewOrderPage
 	UseTable	Merchandise Subtotal
 	#VerifyText	$138.82
+	${SubTotal}	GetText		//*[@id\="checkout-items"]/tbody/tr/td[5]/p/strong
+	${Shipping}	GetText		//*[@id\="confirmationform"]/div[3]/div[1]/div[3]/div[2]/div[1]/div[2]
+	${Handling}	GetText		//*[@id\="confirmationform"]/div[3]/div[1]/div[3]/div[2]/div[2]/div[2]
+	${EstimateTax}	GetText		//*[@id\="confirmationform"]/div[3]/div[1]/div[3]/div[2]/div[3]/div[2]
 	${Order_TOTAL}	GetText		//*[@id\="confirmationform"]/div[3]/div[1]/div[3]/div[4]/div[2]/strong
+	${Order_TOTAL}=${SubTotal}+${Shipping}+${Handling}+${EstimateTax}
 	ClickText	PLACE ORDER
 #ITS_ThankyouPage
 	VerifyTexts	Thank you for your order!
