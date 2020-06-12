@@ -8,10 +8,10 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_HomePage
-   	[tags]            testgen	nwise=9
+   	[tags]            testgen	nwise=1
 	Appstate       	    FrontPage
 	ClickText      	    ${Mini_Quick}
-	TypeText	quantity	10
+	TypeText	quantity	3
 	TypeText	skuId		${ItemNumber_Quick}
 	ClickText	${AddToCartButton_Quick}
 #ITS_ShoppingCartPage	
@@ -29,8 +29,8 @@ ITS_HomePage
 	#ClickText	SHIP TO THIS ADDRESS
 	#ClickText	REVIEW ORDER
 #ITS_ShippingAddressPage	
-	TypeText	First Name	[Test, ITS, Maari, Muthu]
-	TypeText	Last Name	[Name, Test, Ravi, Arun]
+	TypeText	First Name	Test
+	TypeText	Last Name	Name
 	TypeText	Email	maaritest1@gmail.com
 	# Switch checkbox to off
 	ClickCheckbox       I agree         off
@@ -58,6 +58,9 @@ ITS_HomePage
 	LogScreenshot
 	ClickText	REVIEW ORDER
 #ITS_ReviewOrderPage
+	UseTable	ORDER SUMMARY
+	VerifyTable         r?Your Order Total/c2	$141.11
+	${Order_TOTAL}            GetCellText     r?Your Order Total/c2
 	ClickText	PLACE ORDER
 #ITS_ThankyouPage
 	VerifyTexts	Thank you for your order!
