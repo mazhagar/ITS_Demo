@@ -59,8 +59,8 @@ ITS_HomePage
 	ClickText	REVIEW ORDER
 #ITS_ReviewOrderPage
 	UseTable	Merchandise Subtotal
-	VerifyTable         r6Your Order Total/c?	$138.82
-	${Order_TOTAL}            GetCellText     r?Your Order Total/c2
+	VerifyTable         r6c2	$138.82
+	${Order_TOTAL}            GetCellText     r6c2
 	ClickText	PLACE ORDER
 #ITS_ThankyouPage
 	VerifyTexts	Thank you for your order!
