@@ -58,8 +58,8 @@ ITS_HomePage
 	LogScreenshot
 	ClickText	REVIEW ORDER
 #ITS_ReviewOrderPage
-	UseTable	Order Summary
-	VerifyTable         r?Your Order Total/c2	$138.82
+	UseTable	Merchandise Subtotal
+	VerifyTable         r6Your Order Total/c?	$138.82
 	${Order_TOTAL}            GetCellText     r?Your Order Total/c2
 	ClickText	PLACE ORDER
 #ITS_ThankyouPage
