@@ -8,13 +8,13 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_HomePage
-   	[tags]            testgen	nwise=1
+   	
 	Appstate       	    FrontPage
 	ClickText      	    ${Mini_Quick}
 	TypeText	quantity	3
 	TypeText	skuId		${ItemNumber_Quick}
 	ClickText	${AddToCartButton_Quick}
-#ITS_ShoppingCartPage	
+ITS_ShoppingCartPage	
 	#Paypal Checkout
 	#ClickElement           //*[@id\="replaced_with_paypal_check_button"]/input[5]
 	#TypeText	email	rsivakumar@dss-partners.com
@@ -24,12 +24,13 @@ ITS_HomePage
 	#ClickText	Continue
 	ClickElement	//*[@id\="cartform"]/div[3]/div[3]/div[3]/div[2]/input[3]
 	
-#ITS_SecureCheckoutPage
+ITS_SecureCheckoutPage
 	ClickText           GUEST CHECKOUT
 	#ClickText	SHIP TO THIS ADDRESS
 	#ClickText	REVIEW ORDER
-#ITS_ShippingAddressPage	
-	TypeText	First Name	Test
+ITS_ShippingAddressPage	
+	[tags]            testgen	nwise=2
+	TypeText	First Name	[Test,test]
 	TypeText	Last Name	Name
 	TypeText	Email	maaritest1@gmail.com
 	# Switch checkbox to off
