@@ -8,7 +8,7 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_HomePage
-   	
+   	[tags]            testgen	nwise=2
 	Appstate       	    FrontPage
 	ClickText      	    ${Mini_Quick}
 	TypeText	quantity	3
@@ -29,7 +29,7 @@ ITS_SecureCheckoutPage
 	#ClickText	SHIP TO THIS ADDRESS
 	#ClickText	REVIEW ORDER
 ITS_ShippingAddressPage	
-	[tags]            testgen	nwise=2
+	
 	TypeText	First Name	[Test,test]
 	TypeText	Last Name	Name
 	TypeText	Email	maaritest1@gmail.com
