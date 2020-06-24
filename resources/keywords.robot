@@ -31,6 +31,6 @@ Appstate
 
 FrontPage
 	GoTo    https://its-stg-itsstore.sparkred.com/
-  	TypeAlert      email        cortzuser
-	TypeAlert      Password        p0o!0pen
+  	WriteText       email        cortzuser
+	WriteText      Password        p0o!0pen
 	ClickText	Sign in
