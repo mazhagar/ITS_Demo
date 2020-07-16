@@ -30,7 +30,7 @@ Appstate
 	...               FrontPage
 
 FrontPage
-	GoTo    https://cortzuser:p0o!0pen@its-stg-itsstore.sparkred.com/
-  	#WriteText       email        cortzuser
-	#WriteText      Password        p0o!0pen
+	GoTo    https://its-stg-itsstore.sparkred.com/
+  	#WriteText              cortzuser\t
+	#WriteText              p0o!0pen\n
 	#ClickText	Sign in
